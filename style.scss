@@ -1,0 +1,158 @@
+*{
+  margin:0;
+  padding:0;
+  box-sizing: border-box;
+  text-decoration: none;
+  list-style: none;
+}
+
+$main-color:#b3b66a;
+$second-color: #f2f7b9;
+$third-color: rgb(135, 134, 153);
+
+html, body{
+  width: 100%;
+  height:100%;  
+}
+
+header h1{
+  position: relative;
+  text-align: center;
+  padding:1.5rem 0;
+  background: linear-gradient(90deg,$main-color, $second-color);
+  box-shadow: 0 8px 6px -6px black;
+  
+  .switcher{
+    display:inline-block;
+    position: absolute;
+    left: 10px;
+    bottom: 10px;
+    padding: 0.15rem 1rem;
+    background: rgba(71, 72, 143, 0.6);  
+    color: white;
+    border-radius: 20px;
+    cursor:pointer;
+  }
+}
+
+.currencies{
+  background: linear-gradient(90deg,$main-color, $second-color);
+  overflow: auto;
+  transition: height 0.3s ease;
+  height: 0;
+}
+.currencies.show{
+  height:350px;
+}
+
+.currency{
+  display:inline-block;
+  border-radius: 100px;
+  padding: 2px 5px;
+  margin: 0.25rem;
+  text-align: center;
+  background: $third-color;
+  color: rgb(50, 50, 50);
+
+  .cur-code{
+    font-weight: 600;
+    font-size: 1rem;
+  }
+  // .cur-name{
+  //   font-size: 12px;
+  //   font-weight: normal;
+  // }
+}
+
+.currency:hover{
+  cursor:pointer;
+  background:rgb(255, 255, 255)
+}
+
+.searcher{
+  display: flex;
+  align-items: center;
+  padding: 1rem;
+  border: 2px solid black;
+  background: white;
+
+  label{
+    font-size: 20px;
+    font-weight: 600;
+  }
+  input, select{
+    width: 100px;
+    margin: 0 0.5rem;
+    padding: 5px;
+  }
+  .count{
+    border-radius: 5px;
+    border: 3px solid rgb(87, 86, 86);
+    cursor: pointer;
+    &:hover{
+      background-color: $main-color;
+    }
+  }
+}
+
+
+.monitor{
+  display: flex;
+  background: linear-gradient(90deg,$main-color, $second-color);
+
+  .each-cur{
+    padding:1rem;
+    border: 1px solid black;
+    display:flex;
+    align-items: center;
+  }
+
+  .target{
+    display:flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 30%;
+    border: 1px solid black;
+  }
+  .exchanges{
+    width:70%
+
+  }
+
+  .each-rate{
+    font-size: 30px;
+    font-weight: 500;
+  }
+
+  .each-amount{
+    font-size: 30px;
+    font-weight: 600;
+  }
+
+  .del-btn{
+    display: inline-block;
+    width: 30px;
+    height: 100%;
+    border-radius: 5px;
+    text-align: center;
+    border: 2px solid rgb(119, 119, 119);
+    cursor: pointer;
+    &:hover {
+      background:red;
+    }
+  }
+
+  .swap-btn{
+    display: inline-block;
+    width: 30px;
+    height: 100%;
+    border-radius: 5px;
+    text-align: center;
+    border: 2px solid rgb(119, 119, 119);
+    cursor: pointer;
+    &:hover {
+      background:rgb(31, 76, 160);
+      color:white;
+    }
+  }
+}

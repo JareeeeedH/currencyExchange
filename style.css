@@ -1,0 +1,179 @@
+* {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  text-decoration: none;
+  list-style: none;
+}
+
+html, body {
+  width: 100%;
+  height: 100%;
+}
+
+header h1 {
+  position: relative;
+  text-align: center;
+  padding: 1.5rem 0;
+  background: -webkit-gradient(linear, left top, right top, from(#b3b66a), to(#f2f7b9));
+  background: linear-gradient(90deg, #b3b66a, #f2f7b9);
+  -webkit-box-shadow: 0 8px 6px -6px black;
+          box-shadow: 0 8px 6px -6px black;
+}
+
+header h1 .switcher {
+  display: inline-block;
+  position: absolute;
+  left: 10px;
+  bottom: 10px;
+  padding: 0.15rem 1rem;
+  background: rgba(71, 72, 143, 0.6);
+  color: white;
+  border-radius: 20px;
+  cursor: pointer;
+}
+
+.currencies {
+  background: -webkit-gradient(linear, left top, right top, from(#b3b66a), to(#f2f7b9));
+  background: linear-gradient(90deg, #b3b66a, #f2f7b9);
+  overflow: auto;
+  -webkit-transition: height 0.3s ease;
+  transition: height 0.3s ease;
+  height: 0;
+}
+
+.currencies.show {
+  height: 350px;
+}
+
+.currency {
+  display: inline-block;
+  border-radius: 100px;
+  padding: 2px 5px;
+  margin: 0.25rem;
+  text-align: center;
+  background: #878699;
+  color: #323232;
+}
+
+.currency .cur-code {
+  font-weight: 600;
+  font-size: 1rem;
+}
+
+.currency:hover {
+  cursor: pointer;
+  background: white;
+}
+
+.searcher {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding: 1rem;
+  border: 2px solid black;
+  background: white;
+}
+
+.searcher label {
+  font-size: 20px;
+  font-weight: 600;
+}
+
+.searcher input, .searcher select {
+  width: 100px;
+  margin: 0 0.5rem;
+  padding: 5px;
+}
+
+.searcher .count {
+  border-radius: 5px;
+  border: 3px solid #575656;
+  cursor: pointer;
+}
+
+.searcher .count:hover {
+  background-color: #b3b66a;
+}
+
+.monitor {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  background: -webkit-gradient(linear, left top, right top, from(#b3b66a), to(#f2f7b9));
+  background: linear-gradient(90deg, #b3b66a, #f2f7b9);
+}
+
+.monitor .each-cur {
+  padding: 1rem;
+  border: 1px solid black;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.monitor .target {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  width: 30%;
+  border: 1px solid black;
+}
+
+.monitor .exchanges {
+  width: 70%;
+}
+
+.monitor .each-rate {
+  font-size: 30px;
+  font-weight: 500;
+}
+
+.monitor .each-amount {
+  font-size: 30px;
+  font-weight: 600;
+}
+
+.monitor .del-btn {
+  display: inline-block;
+  width: 30px;
+  height: 100%;
+  border-radius: 5px;
+  text-align: center;
+  border: 2px solid #777777;
+  cursor: pointer;
+}
+
+.monitor .del-btn:hover {
+  background: red;
+}
+
+.monitor .swap-btn {
+  display: inline-block;
+  width: 30px;
+  height: 100%;
+  border-radius: 5px;
+  text-align: center;
+  border: 2px solid #777777;
+  cursor: pointer;
+}
+
+.monitor .swap-btn:hover {
+  background: #1f4ca0;
+  color: white;
+}
+/*# sourceMappingURL=style.css.map */
